@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cripto.css">
+    <title>Cotizar Criptomonedas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center flex-wrap">
+
+            <div class="col-8 col-md-5">
+                <img class="img-fluid" src="./img/cryptomonedas.png" alt="image criptomoneda">
+            </div>
+            
+            <div class="col-8 col-md-8 col-lg-4">
+                <form id="formulario" role="form">
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="form-label">Elige tu Moneda</label>
+                            <select id="moneda" class="form-select" name="moneda">
+                                <option value="" disabled selected>Elige tu moneda</option>
+                                <option value="USD">Dolar Estadounidense</option>
+                                <option value="PEN">Soles</option>
+                                <option value="GBP">Libras</option>
+                                <option value="EUR">Euros</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="form-label">Elige tu Criptomoneda</label>
+                            <select id="criptomonedas" class="form-select" name="criptomoneda">Elige tu criptomoneda
+                                <option value="" disabled selected>Elige tu criptomoneda</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <input class="form-control btn btn-info text-white text-uppercase" type="submit" value="cotizar">
+
+                    <div id="resultado" class="row mt-4 gx-0 resultado "></div>
+            </div>
+
+
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
